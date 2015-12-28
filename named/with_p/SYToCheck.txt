@@ -1,0 +1,17 @@
+To Check by SY
+
+### 2015년 12월 28일 ###
+
+- substitution.v ==> substutition_wellformedness.v 로 변경하였음.
+- associations_extra.v 필요한가? 아니면 associations.v와 합치면 어떠한가?
+- language_syntax.v 
+    - Ltr ==> BVar  변경하는 것이 어떤가?
+    - 그렇다면 ol ==> ob 또는 ov로 변경할 것.
+- 모든 파일에서 oc_? 등과 관련된 정의와 램마들은 전혀 필요 없어서 주석처리 하였음.
+- fresh_cst ==> fresh_name 으로 변경하였음.
+- renaming.v
+    - renaming_t, renaming, renaming_c 가 각각 subst_t, subst, subst_c의 특수한 경우임을 증명하였음. 
+    - 이를 활용할 때 장점이 있을까를 확인해야 함.
+- compleneteness.v
+    - 메인 내용 이외의 보조 렘마들은 다른 곳으로 이동하는 것이 좋음.
+    - 예르 들어, substitution_wellformedness.v, renaming.v 등으로 이동 권유.
